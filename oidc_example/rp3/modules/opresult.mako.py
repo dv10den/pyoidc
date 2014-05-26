@@ -3,12 +3,12 @@ from mako import runtime, filters, cache
 UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
-_magic_number = 6
-_modified_time = 1398247566.423659
-_template_filename='htdocs/opresult.mako'
-_template_uri='opresult.mako'
-_template_cache=cache.Cache(__name__, _modified_time)
-_source_encoding='utf-8'
+_magic_number = 9
+_modified_time = 1401091276.015822
+_enable_loop = True
+_template_filename = 'htdocs/opresult.mako'
+_template_uri = 'opresult.mako'
+_source_encoding = 'utf-8'
 _exports = []
 
 
@@ -51,7 +51,7 @@ def create_result(userinfo):
 
 
 def render_body(context,**pageargs):
-    context.caller_stack._push_frame()
+    __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         userinfo = context.get('userinfo', UNDEFINED)

@@ -396,7 +396,7 @@ if __name__ == '__main__':
 
     kwargs = {
         "template_lookup": LOOKUP,
-        "template": {"form_post": "form_response.mako"},
+        # "template": {"form_post": "form_response.mako"},
         #"template_args": {"form_post": {"action": "form_post"}}
     }
 
